@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#DestroyedButton{
+    background: url('../CompCSS/MotherNatureFire.png') red;
+    background-repeat: no-repeat;
+    background-size: 100lvw 100%;
+    background-position: center;
+    color: aqua;
+    font-size: 30px;
+}
+#SaveButton{
+    background: url('../CompCSS/MotherNatureLife.png') lightgreen;
+    background-repeat: no-repeat;
+    background-size: 100lvw 100%;
+    background-position: center;
+    color: aqua;
+    font-size: 50px;
+}
+.Choice{
+    display: flex;
+}
+

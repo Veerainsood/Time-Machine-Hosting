@@ -1,0 +1,9 @@
+canvas{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('./image.png');
+}
+body{
+    background: url('./image.png');
+}
