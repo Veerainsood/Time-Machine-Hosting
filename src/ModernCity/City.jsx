@@ -2,7 +2,6 @@ import { Canvas } from '@react-three/fiber';
 import {  useEffect } from 'react';
 import React, { useState } from 'react';
 import { Physics, RigidBody } from '@react-three/rapier';
-import {Ground} from '../Components/Ground'; // Ensure this is the correct import for your Ground component
 import { Player } from '../Components/Player';
 import { FPV } from '../Components/FPV';
 import { SkyCycle } from '../Components/ChangeDayNight';
@@ -34,6 +33,7 @@ import { Fast_Food } from './Models/Fast_Food';
 import { Gas_pump } from './Models/Gas_pump';
 import { SpanishHouse } from './Models/SpanishHouse';
 import { Vending } from './Models/Vending';
+import { StreetPeople } from './Models/StreetPeopleDining';
 
 function City() {  
 
@@ -78,21 +78,20 @@ function City() {
         <House position={[-160,-5,260]} rotation={[0, 0, 0]} scale={[10,10, 10]}/>
         <pointLight position={[32, 10, 30]} intensity={1000} color="#fff" target={new THREE.Vector3(0, 0, -1)} />
         <HyperCar1 position={[30,0.2, 30]} rotation={[0, 0, 0]} scale={[150,150, 150]}/>
-        {/* <pointLight position={[35, 5, 30]} intensity={100} color="#fff" target={new THREE.Vector3(0, 0, -1)} /> */}
         <HyperCar2 position={[37,0.2, 30]} rotation={[0, 0, 0]} scale={[150,150, 150]}/>
         <HyperCar1 position={[26,0.2, 30]} rotation={[0, 0, 0]} scale={[150,150, 150]}/>
         <pointLight position={[25, 20, 90]} intensity={2000} color="#fff" target={new THREE.Vector3(0, 0, -1)} />
         <HyperCar2 position={[33.5,0.2, 30]} rotation={[0, 0, 0]} scale={[150,150, 150]}/>
-      <BasketBallStad position ={[30,0.5,63]} scale ={[3.5,3.5,3.5]}/>
-      <BasketBallStad position ={[-62,0.5,103]} rotation={[0,Math.PI/2,0]} scale ={[2.2,3,3]}/>
-      <BasketBallStad position ={[-85,0.5,193]} rotation={[0,0,0]} scale ={[2.5,3,3.6]}/>
-      <Disco position ={[-80,0.5,-80]} scale ={[5.5,5.5,5.5]}/>
-       {/* <pointLight position={[35, 5, 30]} intensity={100} color="#fff" target={new THREE.Vector3(0, 0, -1)} /> */}
-       <GreyTheater position ={[25,0.4,190]} rotation={[0, 90, 0]} scale ={[0.8,0.8,0.8]} /> 
-       {/* <CarPackSix position ={[10,0.1,120]} rotation={[0, 0, 0]} scale ={[2.3,2.3,2.3]} /> */}
-       <TheaterBig position ={[15,2,350]} rotation={[0, 0, 0]} scale ={[1.4,1.4,1.4]} />
-       <Building_One position ={[-100,0.1,380]} rotation={[0,0,0]} scale ={[0.007,0.007,0.007]} />
-       <Modern_VILLA position ={[-70, -1, 50]} rotation={[0,359.7,0]} scale ={[2,2,2]} />
+        <BasketBallStad position ={[30,0.5,63]} scale ={[3.5,3.5,3.5]}/>
+        <BasketBallStad position ={[-62,0.5,103]} rotation={[0,Math.PI/2,0]} scale ={[2.2,3,3]}/>
+        <BasketBallStad position ={[-85,0.5,193]} rotation={[0,0,0]} scale ={[2.5,3,3.6]}/>
+        <Disco position ={[-80,0.5,-80]} scale ={[5.5,5.5,5.5]}/>
+        <StreetPeople position={[-79,0.5,270]} scale={[2,2,2]}/>
+        <StreetPeople position={[-127,0.3,132]} scale={[2,2,2.5]} rotation={[0,Math.PI/2,0]}/>
+        <GreyTheater position ={[25,0.4,190]} rotation={[0, 90, 0]} scale ={[0.8,0.8,0.8]} /> 
+        <TheaterBig position ={[15,2,350]} rotation={[0, 0, 0]} scale ={[1.4,1.4,1.4]} />
+        <Building_One position ={[-100,0.1,380]} rotation={[0,0,0]} scale ={[0.007,0.007,0.007]} />
+        <Modern_VILLA position ={[-70, -1, 50]} rotation={[0,359.7,0]} scale ={[2,2,2]} />
         <pointLight position={[35,10,-20]} intensity={1000} color="#fff" target={new THREE.Vector3(0, 0, -1)} />
         <Trash position ={[35, 0, -20]} rotation={[0,359.7,0]} scale ={[0.05,0.05,0.05]} />
         <Gas_Station position={[-147,-0.4,200]} rotation={[0, 69.12, 0]} scale={[2,2.5, 2]}/>
