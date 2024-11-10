@@ -7,16 +7,16 @@ import { SkyCycle } from '../Components/ChangeDayNight';
 import { TimeMachine2 } from '../ForestModels/TimeMachine2';
 import { EntryCircle } from '../ForestModels/EntryCircle';
 import { Loader, PointerLockControls, Stars } from '@react-three/drei';
-import { Suspense } from "react"
+import { Suspense, useState } from "react"
 import { KeyboardControls } from '@react-three/drei';
 import { Axes } from '../Components/AxesHelper';
-import "../FutureCity/FutureCity.css"
+import styles from "../FutureCity/FutureCity.module.css"
 import { DestroyedCityModel } from './Models/DestroyedCityModel';
 
 export function DestroyedCity() {  
+  const [showReader, setShowReader] = useState(true);
   return (
     <>    
-    <link rel='stylesheet' href='../FutureCity/FutureCity.css'></link>
       <Suspense>
       <KeyboardControls
           map={[
@@ -26,6 +26,21 @@ export function DestroyedCity() {
             { name: "right", keys: ["ArrowRight", "d", "D"] },
             { name: "jump", keys: ["Space"] },
           ]}>
+      <div className={styles.canvas}>
+      {showReader && (
+        <div className={styles.readerOverlay}>
+          <p className={styles.specialPara}>
+          With every step taken in disregard, the earth struggles under the weight of neglect, and the forests mourn in silence.<br/> Where once life flourished, now barren land stretches, a reminder of choices left unmade and paths left untended.<br/><br/>
+
+          Each tree that was cut without thought, each river polluted, has left scars upon the land.<br/> The animals have retreated into shadows, the rivers run dry and lifeless, and the skies darken with a haze that dims the once-brilliant sun.<br/> What was once a journey of promise has now turned into a path of despair—a path that reminds all who travel it of a world’s balance forever lost.<br/><br/>
+
+          You have seen the limits of nature's resilience, and now the trust it once extended has faded.<br/> The lands and creatures that once thrived in harmony have withered, their vibrant colors drained.<br/> Remember, the smallest acts of harm—littering a river, ignoring a forest’s needs, failing to protect the creatures within—echo into the distance, affecting more than just the moment.<br/><br/>
+
+          Now, as you walk this desolate path, remember the choices that led here.<br/> You are not just a traveler but a witness to the consequences of disregard, and perhaps, a reminder to others of the fragile balance that sustains all life."<br/><br/>
+          </p>
+          <button className={styles.hideOverlayButton} onClick={()=>{setShowReader(false)}}>Continue</button>
+        </div>
+      )}
       <Canvas>
         <SkyCycle />
         <ambientLight intensity={1}/> 
@@ -49,6 +64,7 @@ export function DestroyedCity() {
         </Physics>
       <PointerLockControls />
       </Canvas>
+      </div>
       </KeyboardControls>
       <Loader />
       </Suspense>    

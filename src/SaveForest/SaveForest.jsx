@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './SaveForest.css'; // Import CSS file
+import styles from './SaveForest.module.css';  // Import CSS Module
 
 const actions = [
     { text: "Plant a tree in your yard or community.", type: "positive" },
@@ -109,61 +109,64 @@ const actions = [
 
 function SaveForest() {
     const [greenCount, setGreenCount] = useState(0);
-    const [actionText, setActionText] = useState("");
-    const [actionType, setActionType] = useState("");
-    const [isGameActive, setIsGameActive] = useState(false);
-    const [gameDuration] = useState(60000); // 60 seconds
-    let actionInterval;
-    let endTime;
+  const [actionText, setActionText] = useState("");
+  const [actionType, setActionType] = useState("");
+  const [isGameActive, setIsGameActive] = useState(false);
+  const [gameDuration] = useState(60000); // 60 seconds
+  let actionInterval;
+  let endTime;
 
-    const startGame = () => {
-        setGreenCount(0);
-        setIsGameActive(true);
+  const startGame = () => {
+    setGreenCount(0);
+    setIsGameActive(true);
 
-        endTime = Date.now() + gameDuration;
-        actionInterval = setInterval(showRandomAction, 1000); // Show a new action every second
+    endTime = Date.now() + gameDuration;
+    actionInterval = setInterval(showRandomAction, 1000); // Show a new action every second
 
-        setTimeout(endGame, gameDuration);
-    };
+    setTimeout(endGame, gameDuration);
+  };
 
-    const showRandomAction = () => {
-        const randomAction = actions[Math.floor(Math.random() * actions.length)];
-        setActionText(randomAction.text);
-        setActionType(randomAction.type);
-    };
+  const showRandomAction = () => {
+    const randomAction = actions[Math.floor(Math.random() * actions.length)];
+    setActionText(randomAction.text);
+    setActionType(randomAction.type);
+  };
 
-    const handleActionClick = () => {
-        if (actionType === "positive") {
-            setGreenCount(greenCount + 1);
-            document.querySelector('.App').style.backgroundColor = 'rgb(173, 225, 171)'
-        } else {
-            setGreenCount(greenCount - 1);
-            document.querySelector('.App').style.backgroundColor = 'sandybrown'
-        }
-    };
-    
-    const endGame = () => {
-        clearInterval(actionInterval);
-        setIsGameActive(false);
-        alert(`Game over!`);
-    };
+  const handleActionClick = () => {
+    if (actionType === "positive") {
+      setGreenCount(greenCount + 1);
+      document.querySelector('.' + styles.App).style.backgroundColor = 'rgb(173, 225, 171)'; // Green background
+    } else {
+      setGreenCount(greenCount - 1);
+      document.querySelector('.' + styles.App).style.backgroundColor = 'sandybrown'; // Brown background
+    }
+  };
+  
+  const endGame = () => {
+    clearInterval(actionInterval);
+    setIsGameActive(false);
+    alert(`Game over!`);
+  };
 
-    useEffect(() => {
+  useEffect(() => {
+    // You can add side-effects or cleanup here if necessary
+  }, [isGameActive]);
 
-    }, [isGameActive]);
-
-    return (
-        <div className="App">
-            <link rel='stylesheet' href='./SaveForest.css'></link>
-            <h1>Your Green Count: {greenCount}</h1>
-            {!isGameActive && <button id="StartGame" onClick={startGame}>Start Game</button>}
-            {isGameActive && (
-                <div id="action-bar" onClick={handleActionClick} className={actionType}>
-                    {actionText}
-                </div>
-            )}
+  return (
+    <div className={styles.App}>
+      <h1>Your Green Count: {greenCount}</h1>
+      {!isGameActive && <button id="StartGame" className={styles.StartGame} onClick={startGame}>Start Game</button>}
+      {isGameActive && (
+        <div
+          id="action-bar"
+          onClick={handleActionClick}
+          className={`${styles.actionBar} ${styles[actionType]}`}
+        >
+          {actionText}
         </div>
-    );
+      )}
+    </div>
+  );
 }
 
 export default SaveForest;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 Forest Degradation Simulation
 
 (Warning Heavy site ... due to many 3d maps so may take time to load.. for best performance run on local machine)
@@ -109,3 +110,6 @@ This project bridges the gap by offering an **interactive**, **personalized**, a
 Feel free to reach out to any of the contributors for more information or to contribute to the project!
 
 
+=======
+# Time-Machine
+>>>>>>> temp

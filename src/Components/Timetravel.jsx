@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../CompCSS/TimeTravel.css'; // Ensure to create this CSS file for styling
+import styles from '../CompCSS/TimeTravel.module.css'; // Ensure this file is a CSS module
 import { useNavigate } from 'react-router-dom';
 
-const DateSlider = () => {
+const DateTimePicker = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
   const navigate = useNavigate();
   
@@ -17,30 +17,27 @@ const DateSlider = () => {
 
   const handleTimeTravelClick = () => {
     if(selectedYear <1500)
-      navigate('/Forest'); // Navigate to the '/3D' route
+      navigate('/Forest'); // Navigate to the '/Forest' route
     else if(selectedYear >= 2050)
-      navigate('/FutureChoice'); // Navigate to the '/3D' route
+      navigate('/FutureChoice'); // Navigate to the '/FutureChoice' route
     else
-      navigate('/City'); // Navigate to the '/3D' route
+      navigate('/City'); // Navigate to the '/City' route
   };
 
   return (
-    <>
-      <link rel='stylesheet' href='../CompCSS/TimeTravel.css'></link>
-      <div className="date-slider-container">
-        <div id="date">Selected Year: {selectedYear}</div>
-        <input
-          type="range"
-          min={minYear}
-          max={maxYear}
-          value={selectedYear}
-          onChange={handleChange}
-          className="date-slider"
-        />
-        <button id="date-button" onClick={handleTimeTravelClick}>Time Travel</button>
-      </div>
-    </>
+    <div className={styles.dateSliderContainer}>
+      <div className={styles.date}>Selected Year: {selectedYear}</div>
+      <input
+        type="range"
+        min={minYear}
+        max={maxYear}
+        value={selectedYear}
+        onChange={handleChange}
+        className={styles.dateSlider}
+      />
+      <button className={styles.dateButton} onClick={handleTimeTravelClick}>Time Travel</button>
+    </div>
   );
 };
 
-export default DateSlider;
+export default DateTimePicker;

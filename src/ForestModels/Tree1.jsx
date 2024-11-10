@@ -12,7 +12,7 @@ export function Tree1Model(props) {
   return (
     <group {...props} dispose={null}>
       {/* <RigidBody type='fixed' colliders='hull'> */}
-      <mesh geometry={nodes.jacaranda_tree_trunk.geometry} material={materials.jacaranda_tree_trunk} />
+      <mesh geometry={nodes.jacaranda_tree_trunk.geometry} material={materials.jacaranda_tree_trunk}/>
       <mesh geometry={nodes.jacaranda_tree_branches.geometry} material={materials.jacaranda_tree_branches} />
       <mesh geometry={nodes.jacaranda_tree_leaves.geometry} material={materials.jacaranda_tree_leaves} />
       {/* </RigidBody> */}

@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
-import '../CompCSS/TimeTravel.css'; // Ensure to create this CSS file for styling
 import { useNavigate } from 'react-router-dom';
-
-import "../CompCSS/FutureChoice.css"
+import styles from "../CompCSS/FutureChoice.module.css"
 
 export default function FutureChoice () {
   const navigate = useNavigate();
 
   return (
     <>
-      <link rel='stylesheet' type="text/css" href='../CompCSS/FutureChoice.css'></link>
-      <div className='Choice'>
-        <button id="DestroyedButton"
+      <div className={styles.Choice}>
+        <button className={styles.DestroyedButton}
             onClick={() => navigate('/Destroyed')}
         >I Will not Change My Habbits</button>
-        <button id="SaveButton"
+        <button className={styles.SaveButton}
             onClick={() => navigate('/TwoBrightFuture')}
         >I Will Save Nature</button>
       </div>

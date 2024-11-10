@@ -1,8 +1,8 @@
 import { useFrame } from '@react-three/fiber';
 import { useState, useRef } from 'react';
 import { Vector3 } from 'three';
-import { Deer } from '../ForestModels/Deer';
-import { Tiger } from '../ForestModels/Tiger';
+import { Deer } from '../models/Deer';
+import { Tiger } from '../models/Tiger';
 const spawnDistance = 20; // Distance within which trees will spawn
 const deleteDistance = 25; // Distance beyond which trees will be deleted
 
