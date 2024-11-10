@@ -7,15 +7,15 @@ import "../assets/css/lightbox.css"
 import "../assets/vendor/bootstrap/css/bootstrap.min.css"
 
 export default function HomePage(){
+  const [Muted, setMuted] = useState(true);
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      // Ensure the video is muted when the component mounts
-      videoRef.current.muted = true;
+      videoRef.current.muted = Muted;
       videoRef.current.loop = true;
     }
-  }, []);
+  }, [Muted]);
     return (
         <>
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -75,15 +75,17 @@ export default function HomePage(){
             src="/course-video.mp4"
             autoPlay="true"
             ref={videoRef}
-            muted
+            muted={Muted} 
             loop 
             id="bg-video" 
           />
+          
           <div className="video-overlay header-text">
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="caption">
+                    <button id={Muted? 'UnmuteButton':'MutedButton'} onClick={() => setMuted(!Muted)}/>
                     <h1 id="MainId1">Small Steps Lead to Big Changes</h1>
                     <h2 id="MainId2">Welcome to Time-Machine</h2>
                     <div className="main-button-red">

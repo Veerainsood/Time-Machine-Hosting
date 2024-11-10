@@ -377,7 +377,28 @@ label {
 button {
     border-radius: 0
 }
-
+#UnmuteButton {
+    background-image: url('/ButtonUnmute.png'); /* Correct the image file extension */
+    background-size: cover; /* Ensures the image covers the button */
+    border: none; /* Optional, removes the default button border */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    display: flex; /* Ensures the button stays inline with other elements */
+    background-color: transparent;
+    margin-left: 10%;
+}
+#MutedButton {
+    background-image: url('/Mute.png'); /* Correct the image file extension */
+    background-size: cover; /* Ensures the image covers the button */
+    border: none; /* Optional, removes the default button border */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    display: flex; /* Ensures the button stays inline with other elements */
+    background-color: transparent;
+    margin-left: 10%;
+}
 button:focus:not(:focus-visible) {
     outline: 0
 }

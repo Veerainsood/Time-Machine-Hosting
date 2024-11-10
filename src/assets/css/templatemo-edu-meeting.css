@@ -879,6 +879,15 @@ services
   right: -85px;
 }
 
+.UnmuteButton {
+  background-image: url('/ButtonUnmute.png'); /* Correct the image file extension */
+  background-size: cover; /* Ensures the image covers the button */
+  border: none; /* Optional, removes the default button border */
+  width: 100px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  display: inline-block; /* Ensures the button stays inline with other elements */
+}
 .services .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
