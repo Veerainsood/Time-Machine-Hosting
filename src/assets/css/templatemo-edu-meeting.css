@@ -715,7 +715,15 @@ banner
   height: 100%;
   width: 100%;
 }
-
+.video-overlay1 video {
+  /* position: absolute; */
+  /* background-color: rgba(31,39,43,0.5); */
+  top: 0vh;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
 
 .main-banner .caption {
   position: absolute;
@@ -784,7 +792,7 @@ services
 }
 
 .services .item {
-  background-image: url(../images/service-item-bg.jpg);
+  background-image: url('/service-item-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -893,7 +901,7 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-image: url('../images/beautiful-natural-view-landscape.jpg');
+  background-image: url('/beautiful-natural-view-landscape.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1028,7 +1036,7 @@ apply now
 */
 
 section.apply-now {
-  background-image: url(../images/apply-bg.jpg);
+  background-image: url(/apply-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1112,7 +1120,7 @@ courses
 */
 
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(/meetings-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1263,6 +1271,7 @@ section.our-facts {
   position: relative;
 }
 
+
 section.our-facts h2 {
   font-size: 58px;
   color: #fff;
@@ -1324,7 +1333,7 @@ section.our-facts h2 {
 section.our-facts .video {
   text-align: center;
   margin-left: 70px;
-  background-image: url(../images/nature-is-speaking.jpg);
+  background-image: url(/nature-is-speaking.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1344,7 +1353,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url('../images/contact.jpg');
+  background-image: url('/contact.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1510,7 +1519,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/beautiful-natural-view-landscape.jpg);
+  background-image: url(/beautiful-natural-view-landscape.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1787,6 +1796,10 @@ responsive
 
   .main-banner .caption {
     top: 60%;
+  }
+  .main-banner video {
+    width: 100vw;
+    height: 100vh;
   }
 
   .main-banner .caption h2 {

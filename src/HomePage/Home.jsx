@@ -1,17 +1,21 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import "../assets/css/fontawesome.css"
 import "../assets/css/templatemo-edu-meeting.css"
 import "../assets/css/owl.css"
 import "../assets/css/lightbox.css"
 import "../assets/vendor/bootstrap/css/bootstrap.min.css"
-import "../../public/service-icon-01.png"
-import "../../public/service-icon-02.png"
-import "../../public/service-icon-03.png"
-import "../../public/5R.jpeg"
 
 export default function HomePage(){
+  const videoRef = useRef(null);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      // Ensure the video is muted when the component mounts
+      videoRef.current.muted = true;
+      videoRef.current.loop = true;
+    }
+  }, []);
     return (
         <>
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -67,9 +71,14 @@ export default function HomePage(){
         {/* ***** Header Area End ***** */}
         {/* ***** Main Banner Area Start ***** */}
     <section className="section main-banner" id="top" data-section="section1">
-        <video autoPlay={true} muted={true} loop={true} id="bg-video">
-            <source src="../../public/course-video.mp4" type="video/mp4" />
-        </video>
+          <video 
+            src="/course-video.mp4"
+            autoPlay="true"
+            ref={videoRef}
+            muted
+            loop 
+            id="bg-video" 
+          />
           <div className="video-overlay header-text">
             <div className="container">
               <div className="row">
@@ -96,7 +105,7 @@ export default function HomePage(){
                 <div className="owl-service-item owl-carousel">
                   <div className="item">
                     <div className="icon">
-                      <img src="../../public/service-icon-01.png" alt="" />
+                      <img src="/service-icon-01.png" alt="" />
                     </div>
                     <div className="down-content">
                       <h4>Best Education</h4>
@@ -108,7 +117,7 @@ export default function HomePage(){
                   </div>
                   <div className="item">
                     <div className="icon">
-                      <img src="../../public/service-icon-02.png" alt="" />
+                      <img src="/service-icon-02.png" alt="" />
                     </div>
                     <div className="down-content">
                       <h4>Best Teachers</h4>
@@ -120,7 +129,7 @@ export default function HomePage(){
                   </div>
                   <div className="item">
                     <div className="icon">
-                      <img src="../../public/service-icon-03.png" alt="" />
+                      <img src="/service-icon-03.png" alt="" />
                     </div>
                     <div className="down-content">
                       <h4>Best Students</h4>
@@ -132,7 +141,7 @@ export default function HomePage(){
                   </div>
                   <div className="item">
                     <div className="icon">
-                      <img src="../../public/service-icon-02.png" alt="" />
+                      <img src="/service-icon-02.png" alt="" />
                     </div>
                     <div className="down-content">
                       <h4>Online Meeting</h4>
@@ -144,7 +153,7 @@ export default function HomePage(){
                   </div>
                   <div className="item">
                     <div className="icon">
-                      <img src="../../public/service-icon-03.png" alt="" />
+                      <img src="/service-icon-03.png" alt="" />
                     </div>
                     <div className="down-content">
                       <h4>Best Networking</h4>
@@ -221,7 +230,7 @@ export default function HomePage(){
                     <div className="meeting-item">
                       <div className="thumb">
                         <a href="./r">
-                          <img src="../../public/5R.jpeg" alt="" />
+                          <img src="/5R.jpeg" alt="" />
                           </a>
                       </div>
                       <div className="down-content">
@@ -240,7 +249,7 @@ export default function HomePage(){
                     <div className="meeting-item">
                       <div className="thumb">
                         <a href="./Water">
-                          <img src="../../public/water.jpeg"/>
+                          <img src="/water.jpeg"/>
                         </a>
                       </div>
                       <div className="down-content">
@@ -261,7 +270,7 @@ export default function HomePage(){
                     <div className="meeting-item">
                       <div className="thumb">
                         <a href="./single_use_plastic">
-                          <img src="../../public/SingleUsePlasric.jpeg" alt="" />
+                          <img src="/SingleUsePlasric.jpeg" alt="" />
                         </a>
                       </div>
                       <div className="down-content">
@@ -280,7 +289,7 @@ export default function HomePage(){
                     <div className="meeting-item">
                       <div className="thumb">
                         <a href="./compost_food">
-                          <img src="../../public/Compost_Food_Waste.jpeg" alt="" />
+                          <img src="/Compost_Food_Waste.jpeg" alt="" />
                         </a>
                       </div>
                       <div className="down-content">
@@ -300,9 +309,7 @@ export default function HomePage(){
           </div>
         </section>
         <section className="our-facts">
-          <video autoPlay={true} muted={true} loop={true} id="bg-video">
-            <source src="../../public/backVid.mp4" type="video/mp4" />
-          </video>
+          <video src="/backVid.mp4" ref = {videoRef} autoPlay={true} muted={true} loop={true} id="bg-video"/>
           <div className="container">
             <div className="video-overlay1">
               <div className="row1">

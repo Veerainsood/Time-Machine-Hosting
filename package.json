@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite preview"
   },
   "dependencies": {
     "@react-three/cannon": "^6.6.0",
@@ -15,6 +16,7 @@
     "@react-three/fiber": "^8.17.9",
     "@react-three/rapier": "^0.8.2",
     "@types/three": "^0.169.0",
+    "dotenv": "^16.4.5",
     "firebase": "^10.14.0",
     "nanoid": "^5.0.7",
     "react": "^18.3.1",
@@ -37,6 +39,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "process": "^0.11.10",
     "vite": "^5.4.1"
   }
 }

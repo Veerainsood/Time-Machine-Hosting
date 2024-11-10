@@ -1,7 +1,15 @@
+import { useEffect, useRef } from "react";
 
 export default function EduVids (){
+  const videoRef = useRef(null);
 
-
+  useEffect(() => {
+    if (videoRef.current) {
+      // Ensure the video is muted when the component mounts
+      videoRef.current.muted = true;
+      videoRef.current.loop = true;
+    }
+  }, []); 
   return(
       <>
 <header className="header-area header-sticky background-header">
@@ -51,11 +59,7 @@ export default function EduVids (){
 </header>
 {/* ***** Header Area End ***** */}
 <section className="heading-page header-text" id="top">
-  <video autoPlay="true" muted="" loop="" id="bg-video">
-    <source
-      src="../../public/1113751_Earth_Handicraft_1280x720.mp4"
-      type="video/mp4"
-    />
+  <video src={"/1113751_Earth_Handicraft_1280x720.mp4"} autoPlay="true" ref={videoRef} loop id="bg-video">
   </video>
 </section>
 <section className="meetings-page" id="meetings">
@@ -70,8 +74,8 @@ export default function EduVids (){
                   <div className="thumb">
                     <a href="./compost_food">
                       <img
-                        src="../../public/Compost_Food_Waste.jpeg"
-                        alt=""
+                        src="/Compost_Food_Waste.jpeg"
+                        alt="" 
                       />
                     </a>
                   </div>
@@ -91,7 +95,7 @@ export default function EduVids (){
                   <div className="thumb">
                     <a href="./single_use_plastic">
                       <img
-                        src="../../public/SingleUsePlasric.jpeg"
+                        src="/SingleUsePlasric.jpeg"
                         alt=""
                       />
                     </a>
@@ -108,7 +112,7 @@ export default function EduVids (){
                 <div className="meeting-item">
                   <div className="thumb">
                     <a href="./small_Garden">
-                      <img src="../../public/Small_Garden.webp" alt="" />
+                      <img src="/Small_Garden.webp" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
@@ -127,7 +131,7 @@ export default function EduVids (){
                   <div className="thumb">
                     <a href="./eco_freindly_cleaning">
                       <img
-                        src="../../public/Eco-freindly-cleaner.jpeg"
+                        src="/Eco-freindly-cleaner.jpeg"
                         alt=""
                       />
                     </a>
@@ -149,7 +153,7 @@ export default function EduVids (){
                 <div className="meeting-item">
                   <div className="thumb">
                     <a href="./natural_Light">
-                      <img src="../../public/Natural_Light.jpeg" alt="" />
+                      <img src="/Natural_Light.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
@@ -167,7 +171,7 @@ export default function EduVids (){
                 <div className="meeting-item">
                   <div className="thumb">
                     <a href="./water">
-                      <img src="../../public/water.jpeg" alt="" />
+                      <img src="/water.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
@@ -187,7 +191,7 @@ export default function EduVids (){
                 <div className="meeting-item">
                   <div className="thumb">
                     <a href="./r">
-                      <img src="../../public/5R.jpeg" alt="" />
+                      <img src="/5R.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
@@ -207,7 +211,7 @@ export default function EduVids (){
                   <div className="thumb">
                     <a href="./eco_freindly_appliances">
                       <img
-                        src="../../public/Eco_Freindly_Appliances.jpeg"
+                        src="/Eco_Freindly_Appliances.jpeg"
                         alt=""
                       />
                     </a>
@@ -224,7 +228,7 @@ export default function EduVids (){
                 <div className="meeting-item">
                   <div className="thumb">
                     <a href="./unplug">
-                      <img src="../../public/Unplug.jpeg" alt="" />
+                      <img src="/Unplug.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
