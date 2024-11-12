@@ -3,9 +3,23 @@
 
 (Warning Heavy site ... due to many 3d maps so may take time to load.. for best performance run on local machine)
 
-Hosted ->[ https://time-machine-tntb.onrender.com/](https://time-machine-hosting.onrender.com)
+Hosted ->[ https://time-machine-tntb.onrender.com/](https://time-machine-d8yj.onrender.com/)
 
 (may need to revist the same link for best experience)
+
+
+---
+## 🎯 Final Tasks + Their Results:
+### **The team members have commited to these basic functionalities being completed by the end of the project..**
+### **Any $\color{#FF0000}{Contribution}$ by any member will be taken into account $\color{#FF0000}{only~when}$** **$\color{#FF0000}{they~complete}$** **$\color{#FF0000}{their~allotted}$ $\color{#FF0000}{task}$✔️**
+- 📌**Adding and mentaining 5 3D Maps + Sustainable action developed -> Veerain and Aman ✅ $\color{#00FF00}(Completed)$** 
+- 📌**Shop -> Kalyan ✅ $\color{#00FF00}(Completed)$**
+- 📌**Website Content Addition -> Aman + Kalyan ✅ $\color{#00FF00}(Completed)$**
+- 📌**Video Graphic Learning + Educational Content -> Aseem ⚠️ $\color{#FFFF00}(Delayed)$**
+- 📌**Backend Website Dev -> Aseem ❌ ($\color{#FF0000}Rejected \color{#FF0000}to \color{#FF0000}do)$**
+- 📌**Aseem(Commited minimum to developing a website better than or similar to https://jkyog.in/en/.**
+- 📌**UI Dev -> Aseem ❌ ($\color{#FF0000}Failed \color{#FF0000}to \color{#FF0000}do)$**
+---
 
 ---
 ## 🎯 Future Task Assignment:

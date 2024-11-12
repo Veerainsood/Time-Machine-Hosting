@@ -47,6 +47,9 @@ export function Player() {
                 isJumpingRef.current = false;
             }
         }
+        const rotated = document.getElementById('map');
+        const rot = camera.rotation.x
+        rotated.style.transform = "rotate(" + rot + "rad)";
     });
 
     return (

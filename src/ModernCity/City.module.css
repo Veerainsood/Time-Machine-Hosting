@@ -25,7 +25,24 @@
     align-items: center;
     cursor: pointer;
 }
-
+.map3d {
+    position:fixed ;
+    bottom: 20px;
+    left: 1%;
+    color: rgb(202, 199, 199);
+    font-size:small;
+    z-index: 999999999999999;;
+    
+  }
+.map {
+    position:absolute ;
+    bottom: 80%;
+    left: 15%;
+    /* transform: translate3d(-50%, 0, 0); **/
+    /* width: 50%; */
+    border:#b0b0b0;
+    z-index: 1;
+}
 .specialPara {
     font-size: 50px;
     width: 70%;

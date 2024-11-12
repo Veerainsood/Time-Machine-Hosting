@@ -36,6 +36,9 @@ import { LittleKrishna } from './Models/LittleKrishna';
 import { AdultKrishna } from './Models/AdultKrishna';
 import { AdultKrishnaSitting } from './Models/AdultKrishnaSitting';
 import styles from "./City.module.css"
+import { Booth } from './Models/Booth';
+import { Wine } from './Models/Wine';
+import { DreamHouse } from './Models/DreamHouse';
 export default function City() {  
   
   const [showReader,setShowReader] = useState(true);
@@ -43,6 +46,10 @@ export default function City() {
   return (
     <>    
       <Suspense>
+      <div className={styles.map3d}>  
+      <img className={styles.map} id="map" src="../src/ModernCity/CityMap.png" height="150px" style={{ width: "50%" }} /> <br />
+        WASD (← → ↑ ↓) for movement + Space to jump
+      </div> 
       <KeyboardControls
           map={[
             { name: "forward", keys: ["ArrowUp", "w", "W"] },
@@ -98,13 +105,16 @@ export default function City() {
         <BasketBallStad position ={[30,0.5,63]} scale ={[3.5,3.5,3.5]}/>
         <BasketBallStad position ={[-62,0.5,103]} rotation={[0,Math.PI/2,0]} scale ={[2.2,3,3]}/>
         <BasketBallStad position ={[-85,0.5,193]} rotation={[0,0,0]} scale ={[2.5,3,3.6]}/>
-        <Disco position ={[-80,0.5,-80]} scale ={[5.5,5.5,5.5]}/>
+        {/* <Disco position ={[-80,0.5,-100]} rotation={[0,0,0]} scale ={[5.5,5.5,5.5]}/> */}
+        <DreamHouse position ={[-75,0.5,-100]} rotation={[0,0,0]} scale ={[0.04,0.04,0.04]}/>
+        <Booth position ={[-100,0.5,-40]} rotation={[0,89.55,0]} scale ={[2,2,2]}/>
         <StreetPeople position={[-79,0.5,270]} scale={[2,2,2]}/>
         <StreetPeople position={[-127,0.3,132]} scale={[2,2,2.5]} rotation={[0,Math.PI/2,0]}/>
         <GreyTheater position ={[25,0.4,190]} rotation={[0, 90, 0]} scale ={[0.8,0.8,0.8]} /> 
         <TheaterBig position ={[15,2,350]} rotation={[0, 0, 0]} scale ={[1.4,1.4,1.4]} />
+        <Wine position ={[-144,0.5,0]} rotation={[0, 89.55, 0]} scale ={[0.2,0.2,0.2]} />
         <AdultKrishna scale={[3,3,3]} position={[100,1,15]} rotation={[0,-Math.PI/2,0]} />
-        <AdultKrishna scale={[1,1,1]} position={[-130,1,-10]} rotation={[0,Math.PI/2,0]}/>
+        {/* <AdultKrishna scale={[1,1,1]} position={[-130,1,-10]} rotation={[0,Math.PI/2,0]}/> */}
         <LittleKrishna scale={[.2,.2,.2]} position={[40,1,15]} rotation={[0,-Math.PI/2,0]}/>
         <AdultKrishnaSitting scale={[.13,.13,.13]} position={[-153,0.5,137]} rotation={[0,0,0]} />
         <AdultKrishnaSitting scale={[.13,.13,.13]} position={[-153,0.5,140.5]} rotation={[0,Math.PI,0]} />
@@ -114,8 +124,8 @@ export default function City() {
         <AdultKrishna scale={[.2,.2,.2]} position={[-19,1,261]} rotation={[0,-Math.PI/2,0]}/>
         <AdultKrishna scale={[.2,.2,.2]} position={[-82,1,261]} rotation={[0,Math.PI/2,0]}/>
         <AdultKrishna scale={[.2,.2,.2]} position={[-82,1,201]} rotation={[0,Math.PI/2,0]}/>
-        <AdultKrishna scale={[.2,.2,.2]} position={[-140,1,141]} rotation={[0,Math.PI/4,0]}/>
-        <AdultKrishna scale={[.2,.2,.2]} position={[-132,1,141]} rotation={[0,Math.PI/2,0]}/>
+        {/* <AdultKrishna scale={[.2,.2,.2]} position={[-140,1,141]} rotation={[0,Math.PI/4,0]}/>
+        <AdultKrishna scale={[.2,.2,.2]} position={[-132,1,141]} rotation={[0,Math.PI/2,0]}/> */}
         <Building_One position ={[-100,0.1,380]} rotation={[0,0,0]} scale ={[0.007,0.007,0.007]} />
         <Modern_VILLA position ={[-70, -1, 50]} rotation={[0,359.7,0]} scale ={[2,2,2]} />
         <pointLight position={[35,10,-20]} intensity={1000} color="#fff" target={new THREE.Vector3(0, 0, -1)} />

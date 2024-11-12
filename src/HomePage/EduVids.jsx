@@ -18,28 +18,25 @@ export default function EduVids (){
       <div className="col-12">
         <nav className="main-nav">
           {/* ***** Logo Start ***** */}
-          <a href="../index" className="logo">
+          <a href="./" className="logo">
             Nature Saving Ideas
           </a>
           {/* ***** Logo End ***** */}
           {/* ***** Menu Start ***** */}
           <ul className="nav">
                 <li className="scroll-to-section">
-                    <a href="./" className="active">
+                    <a href="./">
                       Home
                     </a>
                   </li>
                   <li className="scroll-to-section">
-                      <a href="./EduVids">Videos</a>
+                      <a href="#top" className="active">Videos</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="https://save-nature-site.onrender.com">Shop</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="./Login">3D</a>
-                  </li>
-                  <li className="scroll-to-section">
-                    <a href="#courses">Information</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="#contact">Contact Us</a>

@@ -29,14 +29,14 @@ export default function HomePage(){
       <div className="col-12">
         <nav className="main-nav">
           {/* ***** Logo Start ***** */}
-          <a href="../index" className="logo">
+          <a href="./" className="logo">
             Nature Saving Ideas
           </a>
           {/* ***** Logo End ***** */}
           {/* ***** Menu Start ***** */}
           <ul className="nav">
                 <li className="scroll-to-section">
-                    <a href="./" className="active">
+                    <a href="#top" className="active">
                       Home
                     </a>
                   </li>
@@ -48,9 +48,6 @@ export default function HomePage(){
                   </li>
                   <li className="scroll-to-section">
                     <a href="./Login">3D</a>
-                  </li>
-                  <li className="scroll-to-section">
-                    <a href="#courses">Information</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="#contact">Contact Us</a>
@@ -222,7 +219,7 @@ export default function HomePage(){
                     </li>
                   </ul>
                   <div className="main-button-red">
-                    <a href="./meetings">See More Ideas</a>
+                    <a href="./EduVids">See More Ideas</a>
                   </div>
                 </div>
               </div>
@@ -372,13 +369,21 @@ export default function HomePage(){
               <div className="col-lg-9 align-self-center">
                 <div className="row">
                   <div className="col-lg-12">
-                    <form id="contact" action="" method="post">
+                  <form
+                    id="contact"
+                    action=""
+                    method="post"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      alert("Your message has been recorded!!");
+                    }}
+                  >
                       <div className="row">
                         <div className="col-lg-12">
                           <h2>Let's get in touch</h2>
                         </div>
                         <div className="col-lg-4">
-                          <fieldset>
+                          
                             <input
                               name="name"
                               type="text"
@@ -386,10 +391,10 @@ export default function HomePage(){
                               placeholder="YOURNAME...*"
                               required=""
                             />
-                          </fieldset>
+                          
                         </div>
                         <div className="col-lg-4">
-                          <fieldset>
+                          
                             <input
                               name="email"
                               type="text"
@@ -398,10 +403,10 @@ export default function HomePage(){
                               placeholder="YOUR EMAIL..."
                               required=""
                             />
-                          </fieldset>
+                          
                         </div>
                         <div className="col-lg-4">
-                          <fieldset>
+                          
                             <input
                               name="subject"
                               type="text"
@@ -409,10 +414,10 @@ export default function HomePage(){
                               placeholder="SUBJECT...*"
                               required=""
                             />
-                          </fieldset>
+                          
                         </div>
                         <div className="col-lg-12">
-                          <fieldset>
+                          
                             <textarea
                               name="message"
                               type="text"
@@ -422,14 +427,12 @@ export default function HomePage(){
                               required=""
                               defaultValue={""}
                             />
-                          </fieldset>
+                          
                         </div>
                         <div className="col-lg-12">
-                          <fieldset>
-                            <button type="submit" id="form-submit" className="button">
-                              SEND MESSAGE NOW
-                            </button>
-                          </fieldset>
+                        <button className="button">
+                          SEND MESSAGE NOW
+                        </button>
                         </div>
                       </div>
                     </form>
