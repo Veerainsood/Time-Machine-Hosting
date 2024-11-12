@@ -10,7 +10,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function LittleKrishna(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('./public/LittlekrishnaAnimated.glb')
+  const { scene, animations } = useGLTF('./LittlekrishnaAnimated.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions, names} = useAnimations(animations, group)
@@ -77,4 +77,4 @@ export function LittleKrishna(props) {
   )
 }
 
-useGLTF.preload('./public/LittlekrishnaAnimated.glb')
+useGLTF.preload('./LittlekrishnaAnimated.glb')

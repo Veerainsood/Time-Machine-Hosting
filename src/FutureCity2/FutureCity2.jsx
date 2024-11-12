@@ -19,7 +19,7 @@ export function FutureCity2() {
     <>    
       <Suspense>
       <div className={styles.map3d}>  
-      <img className={styles.map} id="map" src="../src/FutureCity2/Future2Map.png" height="150px" style={{ width: "50%" }} /> <br />
+      <img className={styles.map} id="map" src="/Future2Map.png" height="150px" style={{ width: "50%" }} /> <br />
         WASD (← → ↑ ↓) for movement + Space to jump
       </div>
       <KeyboardControls

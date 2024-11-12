@@ -19,7 +19,7 @@ export function DestroyedCity() {
     <>    
       <Suspense>
       <div className={styles.map3d}>  
-      <img className={styles.map} id="map" src="../src/DestroyedCity/DestroyedMap.png" height="150px" style={{ width: "50%" }} /> <br />
+      <img className={styles.map} id="map" src="/DestroyedMap.png" height="150px" style={{ width: "50%" }} /> <br />
         WASD (← → ↑ ↓) for movement + Space to jump
       </div>
       <KeyboardControls
