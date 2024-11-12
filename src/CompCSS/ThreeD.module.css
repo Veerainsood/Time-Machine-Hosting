@@ -1,0 +1,63 @@
+.canvas{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+.readerOverlay {
+    position: fixed;
+    overflow-y: scroll; /* Scroll only vertically for long text */
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; /* Increase top padding */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    font-size: 50px;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    cursor: pointer;
+}
+.map3d {
+    position:fixed ;
+    bottom: 20px;
+    left: 1%;
+    color: rgb(202, 199, 199);
+    font-size:small;
+    z-index: 999999999999999;;
+    
+  }
+.mapPingImg.img{
+    width: 50%;
+}
+.map {
+    position:absolute ;
+    bottom: 80%;
+    left: 15%;
+    /* transform: translate3d(-50%, 0, 0); **/
+    /* width: 50%; */
+    border:#b0b0b0;
+    z-index: 1;
+  }
+.specialPara {
+    font-size: 50px;
+    width: 70%;
+    color: white;
+    margin: 0;
+    padding: 20px 0; /* Add vertical padding */
+    line-height: 50px;
+    text-align: center;
+}
+
+.hideOverlayButton {
+    background-color: aqua;
+    font-size: 20px;
+    margin-top: 20px; /* Adds spacing below the paragraph */
+}

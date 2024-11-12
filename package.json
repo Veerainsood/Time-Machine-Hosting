@@ -1,0 +1,45 @@
+{
+  "name": "minec",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.9",
+    "@react-three/rapier": "^0.8.2",
+    "@types/three": "^0.169.0",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.14.0",
+    "nanoid": "^5.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-input-slider": "^6.0.1",
+    "react-modern-calendar-datepicker": "^3.1.6",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^6.26.2",
+    "react-toastify": "^10.0.5",
+    "three": "^0.169.0",
+    "zustand": "^5.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "process": "^0.11.10",
+    "vite": "^5.4.1"
+  }
+}

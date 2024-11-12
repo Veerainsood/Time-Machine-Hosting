@@ -1,0 +1,31 @@
+I have a project which is based on  Our web site shows simulation of Forest Degradation over years , solutions , and generate awareness among masses.
+Forests around the world are suffering from deforestation, unsustainable practices, and the effects of climate change, leading to significant environmental degradation. Although efforts to raise awareness are ongoing, many people remain disconnected from the long-term consequences of their actions—or lack thereof—on the environment, especially in their local areas.
+Traditional environmental education methods often fail to create personal engagement, which limits people's motivation to take meaningful action. This project seeks to bridge the gap by offering a more interactive, personalized, and impactful approach to environmental education, encouraging individuals to understand the local environmental challenges they face and take immediate steps to make a difference.
+
+Features
+Experience Past Habitats: Users can immerse themselves in recreated habitats from the past, featuring huts, temples, and ancient trees. The environment includes various animal species, such as tigers and deer, alongside dense forests, providing an authentic glimpse into historical ecosystems. Additionally, ponds, rocks, mountains, and clouds have been included to enhance the overall experience, showcasing what life was like in those times.
+
+Time Travel Machine: Users can interact with a distinctive pink circle that serves as a time travel portal. By selecting a specific year, users can click on "Time Travel" to journey back in time and explore different historical periods related to forest habitats and ecosystems.
+
+Immersive and Engaging Maps: Now, we are showing our first map in which users can explore detailed maps of forest areas to visualize deforestation trends, endangered species' habitats. This feature provides a real-time geographic representation of environmental changes, helping users better understand the scope of deforestation.
+
+3D Login Interface: Users can create accounts and securely log in to the app. This allows for personalized experiences.
+
+Interactive Time Travel Interface: Users can drag or scroll through a timeline to explore key historical periods and events related to forest degradation. Users can explore habitat during past time.
+
+We need a design block diagram for our project  with 
+Time-Machine
+|___public
+|        |____{Many Texture Files + Many .gld , .gltfx files for models}
+|___ src
+         |___{CompCSS -> component based CSS folder}
+         |___{ Components folder includes AxesHelper.jsx , ChangeDayNight.jsx (for controlling day night cycle, FaunaGenerator.jsx, ForestGenerator.jsx, FPV.jsx (for pointer controls) , Ground.jsx, MyPlayer.jsx, Player.jsx, Timetravel.jsx}
+        |___{hooks contains board.jsx , useStore.jsx}
+        |___{Images.js and textures.js and grassimage}
+        |___{Login folder includes  firebase.jsx , Login.jsx , style.css , Background.png }
+        |___{models contains Cart.jsx horsekart.jsx Deer.jsx dog.jsx EntryCircle.jsx(Used for Navigation using NavLinks) ,Hindu Temple Model.jsx, Hut.jsx(Beautifully made house in blender make of wood like in 1100s) , Pond.jsx , TimeMachine.jsx, Tree.jsx , TextureFile.jsx}
+        |___{Navigation: Forest.jsx (3d interactable Home page after login for navigating throughout the website) NavPage.css, NavigationPage.jsx}
+        |___{Register : Register.jsx Style.css}
+        |___{SaveForest: SaveForest.jsx (game for educating people about right steps to be taken for sustainable future, SaveForest.css}
+|__3DForest.jsx -> To Link them all 3d modules to a canvas + their sizes shapes positions etc
+|__App.js -> Contains Routers for our app
