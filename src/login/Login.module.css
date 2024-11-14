@@ -1,0 +1,113 @@
+.position {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+   /* Ensure the container does not stretch too wide */
+  background-image: url('./Background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 600px;
+  height: 600px;
+  margin-left: 20%;
+  padding-bottom: 10px;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(175, 168, 168, 0.51);
+  backdrop-filter: blur(8px);
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border-radius: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.inputField input::placeholder{
+  font-weight: 20px;
+  color: #fff;
+}
+.inputField input{
+  text-align: center;
+}
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+
+.LoginButton {
+  background: url('TimeTravelButton.png');
+  background-position: center;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 4%;
+  font-size: 26px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  border-color: #fff;
+}
+
+.register p{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1)
+}
+.register a{
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(235, 23, 23)
+}
+
+/* Canvas Styling */
+.canvas {
+  justify-content: center;
+  width: 600px;
+  height: 800px;
+}
+
