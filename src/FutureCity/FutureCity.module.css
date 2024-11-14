@@ -6,6 +6,45 @@
     overflow: hidden;
     background: black;
 }
+.pollutionTableContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pollutionTable {
+    width: 200px;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .pollutionTable th, .pollutionTable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  
+  .pollutionTable th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #262020;
+  }
+  
+  .pollutionTable td {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #403737;
+  }
+  .Descrip{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    z-index: 1;
+}
 .readerOverlay {
     position: fixed;
     overflow-y: scroll; /* Scroll only vertically for long text */

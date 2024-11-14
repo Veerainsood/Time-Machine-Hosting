@@ -19,8 +19,42 @@ export function DestroyedCity() {
     <>    
       <Suspense>
       <div className={styles.map3d}>  
-      <img className={styles.map} id="map" src="/DestroyedMap.png" height="150px" style={{ width: "50%" }} /> <br />
+      <img className={styles.map} id="map" src="/DestroyedMap.png" height="150px" style={{ width: "60%" }} /> <br />
         WASD (← → ↑ ↓) for movement + Space to jump
+      </div>
+      <div className={styles.Descrip}>{"Destroyed City Disregarded Nature (2024 <---> 2224)"}</div>
+      <div className={styles.pollutionTableContainer}>
+        <table className={styles.pollutionTable}>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>PM2.5 (µg/m³)</th>
+              <th>CO2 (ppm)</th>
+              <th>NO2 (ppb)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>City Center</td>
+              <td>135</td>
+              <td>800</td>
+              <td>125</td>
+            </tr>
+            <tr>
+              <td>Industrial Zone</td>
+              <td>170</td>
+              <td>900</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Residential Area</td>
+              <td>120</td>
+              <td>950</td>
+              <td>115</td>
+            </tr>
+            {/* Add more rows as needed */}
+          </tbody>
+        </table>
       </div>
       <KeyboardControls
           map={[

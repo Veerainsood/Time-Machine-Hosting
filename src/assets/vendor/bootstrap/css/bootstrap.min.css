@@ -197,11 +197,6 @@ address {
     line-height: inherit
 }
 
-ol,
-ul {
-    padding-left: 2rem
-}
-
 dl,
 ol,
 ul {
@@ -338,7 +333,7 @@ table {
     border-collapse: collapse
 }
 #MainId1{
-    padding-top: 150px;
+    padding-top: 10%;
     display: block;
 }
 caption {
@@ -781,8 +776,8 @@ progress {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
     margin-top: var(--bs-gutter-y)
 }
 
@@ -889,7 +884,7 @@ progress {
 .col-12 {
     flex: 0 0 auto;
     height:fit-content;
-    width: 100%
+    width: 100%;
 }
 
 .offset-1 {

@@ -27,7 +27,10 @@ export function Player() {
             if (position) {
                 camera.position.set(position.x, position.y + 1, position.z);
             }
-
+            if (position.y < -40) {
+                ref.current.setTranslation({ x: 0, y: 2, z: 0 });
+                ref.current.setLinvel({ x: 0, y: velocity.y, z: 0 });
+            }
             // Movement logic
             frontVector.set(0, 0, backward - forward);
             sideVector.set(left - right, 0, 0);

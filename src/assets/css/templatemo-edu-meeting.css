@@ -184,7 +184,7 @@ body {
 .section-heading h2 {
   line-height: 40px;
   margin-top: 0px;
-  margin-bottom: 50px; 
+  margin-left: 30%;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(250,250,250,0.15);
   font-size: 22px;
@@ -585,6 +585,7 @@ header
   }
   .header-area .container {
     padding: 0px;
+    position: fixed;
   }
   .header-area .logo {
     margin-left: 30px;
@@ -910,15 +911,38 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
+  position: relative;
+  padding-top: 230px;
+  padding-bottom: 110px;
+}
+section.upcoming-meetings li{
+  font-weight: 800;
+  /* color: #ead21f; */
+  font-size: larger;
+}
+section.upcoming-meetings .container {
+  margin-left: 5%;
+}
+
+section.upcoming-meetings .backImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('/beautiful-natural-view-landscape.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
+  /* filter: blur(3px); */
+  filter: brightness(60%)
 }
 
+section.upcoming-meetings .frontGround {
+  position: relative;
+  z-index: 1; /* Ensure the foreground is above the blurred background */
+}
 section.upcoming-meetings .section-heading {
   text-align: center;
 }
@@ -977,6 +1001,8 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  height: 400px;
+  width: 400px;
 }
 
 .meeting-item .thumb .price {
@@ -997,6 +1023,8 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .down-content {
   background-color: #fff;
   padding: 30px;
+  width: 400px;
+  height: 200px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -1031,7 +1059,6 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content p {
-  margin-left: 50px;
   color: #1f272b;
   font-size: 14px;
 }
@@ -1300,6 +1327,7 @@ section.our-facts h2 {
   border-radius: 20px;
   padding: 2rem; /* Use rem for better scalability */
   width: 100%; /* Ensures full width */
+  height: 30%;
   margin: 2%; /* Margin percentage works well for responsiveness */
   flex: 1; /* Allows it to grow in height with other elements */
   box-sizing: border-box; /* Includes padding and borders in width/height calculations */
@@ -1329,8 +1357,10 @@ section.our-facts h2 {
     font-size: 56px;
 }
 .count-title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
+    height: 100px;
+    width: 100%;
     color: #fff;
     letter-spacing: 0.5px;
 }
@@ -1441,13 +1471,21 @@ section.contact-us .right-info {
   padding: 40px;
 }
 
+
 section.contact-us .right-info ul li {
-  display: inline-block;
+  display: block;
   border-bottom: 1px solid rgba(250,250,250,0.15);
   margin-bottom: 30px;
   padding-bottom: 30px;
-}
 
+}
+.contact-us{
+  margin: 0;
+}
+.contact-us.container1 {
+  width: 100vw;
+  margin: 0;
+}
 section.contact-us .right-info ul li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;

@@ -97,77 +97,9 @@ export default function HomePage(){
           </div>
         </section>
         {/* ***** Main Banner Area End ***** */}
-        <section className="services">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="owl-service-item owl-carousel">
-                  <div className="item">
-                    <div className="icon">
-                      <img src="/service-icon-01.png" alt="" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Best Education</h4>
-                      <p>
-                        Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                        facilisis massa non vestibulum.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="icon">
-                      <img src="/service-icon-02.png" alt="" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Best Teachers</h4>
-                      <p>
-                        Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                        facilisis massa non vestibulum.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="icon">
-                      <img src="/service-icon-03.png" alt="" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Best Students</h4>
-                      <p>
-                        Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                        facilisis massa non vestibulum.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="icon">
-                      <img src="/service-icon-02.png" alt="" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Online Meeting</h4>
-                      <p>
-                        Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                        facilisis massa non vestibulum.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="icon">
-                      <img src="/service-icon-03.png" alt="" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Best Networking</h4>
-                      <p>
-                        Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                        facilisis massa non vestibulum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="upcoming-meetings" id="meetings">
+          <div className='backImg'/>
+          <div className='frontGround'>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -237,9 +169,10 @@ export default function HomePage(){
                           <h4>5R's</h4>
                         </a>
                         <p>
-                          Practicing this reduces the need for raw materials, saves
-                          energy, and minimizes costs, promoting a sustainable and
-                          circular economy.
+                        Practicing the 5R's—Refuse, Reduce, Reuse, Recycle, conserve resources, 
+                        and reduce environmental impact. By adopting these principles, 
+                        we promote a sustainable, circular economy that benefits both the 
+                        planet and our communities.
                         </p>
                       </div>
                     </div>
@@ -256,11 +189,7 @@ export default function HomePage(){
                           <h4>Conserve Water</h4>
                         </a>
                         <p>
-                          Water conservation preserves limited freshwater resources
-                          and ensures clean water for all. Simple actions, like
-                          reducing waste and fixing leaks, make a big difference.
-                          <br />
-                          <br />{" "}
+                        Conserving water helps protect our limited freshwater resources and ensures access to clean water for everyone. Simple actions, like fixing leaks and using water-efficient appliances, can make a significant impact on preserving this vital resource.
                         </p>
                       </div>
                     </div>
@@ -277,9 +206,7 @@ export default function HomePage(){
                           <h4>Reduce Single-Use Plastic</h4>
                         </a>
                         <p>
-                          Reduces waste and pollution directly.
-                          <br />
-                          <br />
+                        Reducing single-use plastic helps cut down on waste and pollution, protecting both land and marine ecosystems. Simple changes, like using reusable bags and bottles, can significantly reduce plastic waste, making a positive impact on the environment.
                         </p>
                       </div>
                     </div>
@@ -296,8 +223,7 @@ export default function HomePage(){
                           <h4>Compost Food Waste</h4>
                         </a>
                         <p>
-                          Great for gardening and soil health but requires initial
-                          setup
+                        Composting food waste enriches soil and supports healthy gardens while reducing landfill waste. Though it requires some initial setup, the long-term benefits for both the environment and your garden are well worth it.
                         </p>
                       </div>
                     </div>
@@ -305,6 +231,7 @@ export default function HomePage(){
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
         <section className="our-facts">
@@ -444,19 +371,19 @@ export default function HomePage(){
                   <ul>
                     <li>
                       <h6>Phone Number</h6>
-                      <span>010-020-0340</span>
+                      <span>66666999999</span>
                     </li>
                     <li>
                       <h6>Email Address</h6>
-                      <span>info@meeting.edu</span>
+                      <span>timeMachine@gmail.com</span>
                     </li>
                     <li>
                       <h6>Street Address</h6>
-                      <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+                      <span>IIT Tirupati India</span>
                     </li>
                     <li>
                       <h6>Website URL</h6>
-                      <span>www.meeting.edu</span>
+                      <span>www.timeTravels.com</span>
                     </li>
                   </ul>
                 </div>

@@ -47,9 +47,43 @@ export default function City() {
     <>    
       <Suspense>
       <div className={styles.map3d}>  
-      <img className={styles.map} id="map" src="/CityMap.png" height="150px" style={{ width: "50%" }} /> <br />
+      <img className={styles.map} id="map" src="/CityMap.png" height="150px" style={{ width: "60%" }} /> <br />
         WASD (← → ↑ ↓) for movement + Space to jump
       </div> 
+      <div className={styles.Descrip}>{"Modern Era City (1500 <---> 2024)"}</div>
+      <div className={styles.pollutionTableContainer}>
+        <table className={styles.pollutionTable}>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>PM2.5 (µg/m³)</th>
+              <th>CO2 (ppm)</th>
+              <th>NO2 (ppb)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>City Center</td>
+              <td>35</td>
+              <td>400</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Industrial Zone</td>
+              <td>70</td>
+              <td>500</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Residential Area</td>
+              <td>20</td>
+              <td>350</td>
+              <td>15</td>
+            </tr>
+            {/* Add more rows as needed */}
+          </tbody>
+        </table>
+      </div>
       <KeyboardControls
           map={[
             { name: "forward", keys: ["ArrowUp", "w", "W"] },

@@ -34,8 +34,29 @@ function Forest() {
     <>    
      <Suspense>
      <div className={styles.map3d}>  
-      <img className={styles.map} id="map" src="/ForestMap.png" height="150px" style={{ width: "50%" }} /> <br />
-        WASD (← → ↑ ↓) for movement + Space to jump
+      <img className={styles.map} id="map" src="/ForestMap.png" height="150px" style={{ width: "60%" }} /> <br />
+        WASD (← → ↑ ↓) for movement + Space to jump 
+      </div>
+      <div className={styles.Descrip}>{"Medivial Forest Year < 1500"}</div>
+      <div className={styles.pollutionTableContainer}>
+        <table className={styles.pollutionTable}>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>PM2.5 (µg/m³)</th>
+              <th>CO2 (ppm)</th>
+              <th>NO2 (ppb)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Forest</td>
+              <td>20</td>
+              <td>30</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <KeyboardControls
           map={[
