@@ -39,10 +39,11 @@ import styles from "./City.module.css"
 import { Booth } from './Models/Booth';
 import { Wine } from './Models/Wine';
 import { DreamHouse } from './Models/DreamHouse';
+import { useNavigate } from 'react-router-dom';
 export default function City() {  
   
   const [showReader,setShowReader] = useState(true);
-
+  const navigate = useNavigate();
   return (
     <>    
       <Suspense>
@@ -51,6 +52,7 @@ export default function City() {
         WASD (← → ↑ ↓) for movement + Space to jump
       </div> 
       <div className={styles.Descrip}>{"Modern Era City (1500 <---> 2024)"}</div>
+      <img className={styles.home} id="map" src="/home.png" onClick={()=>{navigate('/')}}/>
       <div className={styles.pollutionTableContainer}>
         <table className={styles.pollutionTable}>
           <thead>

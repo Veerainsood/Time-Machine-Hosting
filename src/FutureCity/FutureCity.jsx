@@ -11,11 +11,12 @@ import { Suspense, useState } from "react"
 import { KeyboardControls } from '@react-three/drei';
 import { Axes } from '../Components/AxesHelper';
 import styles from "../FutureCity/FutureCity.module.css"
-
+import { useNavigate } from 'react-router-dom';
 import { Future } from './Models/Future';
 
 function FutureCity() {  
   const [showReader, setShowReader] = useState(true);
+  const navigate = useNavigate();
   return (
     <>    
       <Suspense>
@@ -24,6 +25,7 @@ function FutureCity() {
         WASD (← → ↑ ↓) for movement + Space to jump
       </div>
       <div className={styles.Descrip}>{"Future City Saved Nature (2024 <---> 2224)"}</div>
+      <img className={styles.home} id="map" src="/home.png" onClick={()=>{navigate('/')}}/>
       <div className={styles.pollutionTableContainer}>
         <table className={styles.pollutionTable}>
           <thead>

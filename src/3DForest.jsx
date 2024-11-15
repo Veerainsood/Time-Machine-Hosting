@@ -26,10 +26,12 @@ import { CarryCart } from './models/Cart1'; // Alternative cart model
 import styles from "../src/CompCSS/ThreeD.module.css";
 import { Mountain } from './Mountain'; // Mountain 3D model
 import { MountainFog } from './MountainFog'; // Fog effect for mountains
+import { useNavigate } from 'react-router-dom';
 
 // Function to render the 3D forest environment
 function Forest() {  
   const [showReader,setShowReader] = useState(true);
+  const navigate = useNavigate();
   return (
     <>    
      <Suspense>
@@ -38,6 +40,7 @@ function Forest() {
         WASD (← → ↑ ↓) for movement + Space to jump 
       </div>
       <div className={styles.Descrip}>{"Medivial Forest Year < 1500"}</div>
+      <img className={styles.home} id="map" src="/home.png" onClick={()=>{navigate('/')}}/>
       <div className={styles.pollutionTableContainer}>
         <table className={styles.pollutionTable}>
           <thead>

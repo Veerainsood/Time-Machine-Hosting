@@ -12,9 +12,11 @@ import { KeyboardControls } from '@react-three/drei';
 import { Axes } from '../Components/AxesHelper';
 import styles from "../FutureCity/FutureCity.module.css"
 import { DestroyedCityModel } from './Models/DestroyedCityModel';
+import { useNavigate } from 'react-router-dom';
 
 export function DestroyedCity() {  
   const [showReader, setShowReader] = useState(true);
+  const navigate = useNavigate();
   return (
     <>    
       <Suspense>
@@ -23,6 +25,7 @@ export function DestroyedCity() {
         WASD (← → ↑ ↓) for movement + Space to jump
       </div>
       <div className={styles.Descrip}>{"Destroyed City Disregarded Nature (2024 <---> 2224)"}</div>
+      <img className={styles.home} id="map" src="/home.png" onClick={()=>{navigate('/')}}/>
       <div className={styles.pollutionTableContainer}>
         <table className={styles.pollutionTable}>
           <thead>
