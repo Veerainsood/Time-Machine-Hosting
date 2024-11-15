@@ -18,14 +18,14 @@ export default function EduVids (){
       <div className="col-12">
         <nav className="main-nav">
           {/* ***** Logo Start ***** */}
-          <a href="./" className="logo">
+          <a href="/" className="logo">
             Nature Saving Ideas
           </a>
           {/* ***** Logo End ***** */}
           {/* ***** Menu Start ***** */}
           <ul className="nav">
                 <li className="scroll-to-section">
-                    <a href="./">
+                    <a href="/">
                       Home
                     </a>
                   </li>
@@ -36,7 +36,7 @@ export default function EduVids (){
                     <a href="https://save-nature-site.onrender.com">Shop</a>
                   </li>
                   <li className="scroll-to-section">
-                    <a href="./Login">3D</a>
+                    <a href="/Login">3D</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="#contact">Contact Us</a>
@@ -56,7 +56,7 @@ export default function EduVids (){
 </header>
 {/* ***** Header Area End ***** */}
 <section className="heading-page header-text" id="top">
-  <video src={"/1113751_Earth_Handicraft_1280x720.mp4"} autoPlay="true" ref={videoRef} loop id="bg-video">
+  <video src={"/boy.webm"} autoPlay="true" ref={videoRef} loop id="bg-video">
   </video>
 </section>
 <section className="meetings-page" id="meetings">
@@ -69,7 +69,7 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all soon">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./compost_food">
+                    <a href="/compost_food">
                       <img
                         src="/Compost_Food_Waste.jpeg"
                         alt="" 
@@ -77,7 +77,7 @@ export default function EduVids (){
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./compost_food">
+                    <a href="/compost_food">
                       <h4>Compost Food Waste</h4>
                     </a>
                     <p>
@@ -90,7 +90,7 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all imp">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./single_use_plastic">
+                    <a href="/single_use_plastic">
                       <img
                         src="/SingleUsePlasric.jpeg"
                         alt=""
@@ -98,7 +98,7 @@ export default function EduVids (){
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./single_use_plastic">
+                    <a href="/single_use_plastic">
                       <h4>Reduce Single-Use Plastic</h4>
                     </a>
                     <p>Reduces waste and pollution directly.</p>
@@ -108,12 +108,12 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all soon">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./small_Garden">
+                    <a href="/small_Garden">
                       <img src="/Small_Garden.webp" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./small_Garden">
+                    <a href="/small_Garden">
                       <h4>Grow a Small Garden</h4>
                     </a>
                     <p>
@@ -126,7 +126,7 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all att">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./eco_freindly_cleaning">
+                    <a href="/eco_freindly_cleaning">
                       <img
                         src="/Eco-freindly-cleaner.jpeg"
                         alt=""
@@ -134,7 +134,7 @@ export default function EduVids (){
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./eco_freindly_cleaning">
+                    <a href="/eco_freindly_cleaning">
                       <h4>Eco-Friendly Cleaning Products</h4>
                     </a>
                     <p>
@@ -149,12 +149,12 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all att">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./natural_Light">
+                    <a href="/natural_Light">
                       <img src="/Natural_Light.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./natural_Light">
+                    <a href="/natural_Light">
                       <h4>Opt for Natural Light </h4>
                     </a>
                     <p>
@@ -167,12 +167,12 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all imp">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./water">
+                    <a href="/water">
                       <img src="/water.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./water">
+                    <a href="/water">
                       <h4>Conserve Water</h4>
                     </a>
                     <p>
@@ -187,12 +187,12 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all imp att">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./r">
+                    <a href="/r">
                       <img src="/5R.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./r">
+                    <a href="/r">
                       <h4>5R's</h4>
                     </a>
                     <p>
@@ -206,7 +206,7 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all soon imp">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./eco_freindly_appliances">
+                    <a href="/eco_freindly_appliances">
                       <img
                         src="/Eco_Freindly_Appliances.jpeg"
                         alt=""
@@ -214,7 +214,7 @@ export default function EduVids (){
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./eco_freindly_appliances">
+                    <a href="/eco_freindly_appliances">
                       <h4>Use Energy-Efficient Appliances</h4>
                       <p>Reduces household energy consumption long-term</p>
                     </a>
@@ -224,12 +224,12 @@ export default function EduVids (){
               <div className="col-lg-4 templatemo-item-col all att soon">
                 <div className="meeting-item">
                   <div className="thumb">
-                    <a href="./unplug">
+                    <a href="/unplug">
                       <img src="/Unplug.jpeg" alt="" />
                     </a>
                   </div>
                   <div className="down-content">
-                    <a href="./unplug">
+                    <a href="/unplug">
                       <h4> Unplug Devices When Not in Use</h4>
                     </a>
                     <p>

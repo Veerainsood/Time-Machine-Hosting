@@ -41,13 +41,13 @@ export default function HomePage(){
                     </a>
                   </li>
                   <li className="scroll-to-section">
-                      <a href="./EduVids">Videos</a>
+                      <a href="/EduVids">Videos</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="https://save-nature-site.onrender.com">Shop</a>
                   </li>
                   <li className="scroll-to-section">
-                    <a href="./Login">3D</a>
+                    <a href="/Login">3D</a>
                   </li>
                   <li className="scroll-to-section">
                     <a href="#contact">Contact Us</a>
@@ -69,7 +69,7 @@ export default function HomePage(){
         {/* ***** Main Banner Area Start ***** */}
     <section className="section main-banner" id="top" data-section="section1">
           <video 
-            src="/course-video.mp4"
+            src="/course-video.webm"
             autoPlay="true"
             ref={videoRef}
             muted={Muted} 
@@ -87,7 +87,7 @@ export default function HomePage(){
                     <h2 id="MainId2">Welcome to Time-Machine</h2>
                     <div className="main-button-red">
                       <div className="scroll-to-section">
-                        <a href="./Login">Time-Travel Now</a>
+                        <a href="/Login">Time-Travel Now</a>
                       </div>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ export default function HomePage(){
                     </li>
                   </ul>
                   <div className="main-button-red">
-                    <a href="./EduVids">See More Ideas</a>
+                    <a href="/EduVids">See More Ideas</a>
                   </div>
                 </div>
               </div>
@@ -160,12 +160,12 @@ export default function HomePage(){
                   <div className="col-lg-6">
                     <div className="meeting-item">
                       <div className="thumb">
-                        <a href="./r">
+                        <a href="/r">
                           <img src="/5R.jpeg" alt="" />
                           </a>
                       </div>
                       <div className="down-content">
-                        <a href="./r">
+                        <a href="/r">
                           <h4>5R's</h4>
                         </a>
                         <p>
@@ -180,12 +180,12 @@ export default function HomePage(){
                   <div className="col-lg-6">
                     <div className="meeting-item">
                       <div className="thumb">
-                        <a href="./Water">
+                        <a href="/Water">
                           <img src="/water.jpeg"/>
                         </a>
                       </div>
                       <div className="down-content">
-                        <a href="./Water">
+                        <a href="/Water">
                           <h4>Conserve Water</h4>
                         </a>
                         <p>
@@ -197,12 +197,12 @@ export default function HomePage(){
                   <div className="col-lg-6">
                     <div className="meeting-item">
                       <div className="thumb">
-                        <a href="./single_use_plastic">
+                        <a href="/single_use_plastic">
                           <img src="/SingleUsePlasric.jpeg" alt="" />
                         </a>
                       </div>
                       <div className="down-content">
-                        <a href="./single_use_plastic">
+                        <a href="/single_use_plastic">
                           <h4>Reduce Single-Use Plastic</h4>
                         </a>
                         <p>
@@ -214,12 +214,12 @@ export default function HomePage(){
                   <div className="col-lg-6">
                     <div className="meeting-item">
                       <div className="thumb">
-                        <a href="./compost_food">
+                        <a href="/compost_food">
                           <img src="/Compost_Food_Waste.jpeg" alt="" />
                         </a>
                       </div>
                       <div className="down-content">
-                        <a href="./compost_food">
+                        <a href="/compost_food">
                           <h4>Compost Food Waste</h4>
                         </a>
                         <p>
