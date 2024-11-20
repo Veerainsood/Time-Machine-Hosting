@@ -329,4 +329,3 @@ export function Cricket(props) {
   )
 }
 
-useGLTF.preload('/cricket_stadium.glb')

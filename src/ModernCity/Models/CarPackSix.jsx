@@ -1543,7 +1543,6 @@ export function CarPackSix(props) {
   )
 }
 
-useGLTF.preload('/CarPackSix.glb')
 
 
 

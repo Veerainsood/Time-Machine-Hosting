@@ -26,4 +26,4 @@ export function Mountain(props) {
 }
 
 // Preload the mountain model to ensure it's ready before use
-useGLTF.preload('/mountainsComp.glb')
+

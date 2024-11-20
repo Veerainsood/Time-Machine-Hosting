@@ -100,4 +100,4 @@ export function Cityscape(props) {
   )
 }
 
-useGLTF.preload('/CompressedCityScape2.glb')
+

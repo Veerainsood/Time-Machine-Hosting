@@ -352,4 +352,4 @@ export function AdultKrishnaSitting(props) {
   )
 }
 
-useGLTF.preload('/AdultKrishnaSitting.glb')
+

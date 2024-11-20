@@ -20,4 +20,4 @@ export function Tree1Model(props) {
   )
 }
 
-useGLTF.preload('/Tree1Comp.glb')
+

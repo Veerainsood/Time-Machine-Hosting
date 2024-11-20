@@ -2350,4 +2350,4 @@ export function Future(props) {
   )
 }
 
-useGLTF.preload('/city.glb')
+

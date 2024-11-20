@@ -45,4 +45,3 @@ export function Pond(props) {
   )
 }
 
-useGLTF.preload('/pond_with_waterfalls.glb')

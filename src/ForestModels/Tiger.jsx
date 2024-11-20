@@ -23,4 +23,3 @@ export function Tiger(props) {
   )
 }
 
-useGLTF.preload('/tiger_001.glb')

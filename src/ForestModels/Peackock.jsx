@@ -42,4 +42,4 @@ export function Peackock(props) {
   )
 }
 
-useGLTF.preload('/peakockComp.glb')
+

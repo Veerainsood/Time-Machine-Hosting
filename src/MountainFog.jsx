@@ -26,4 +26,4 @@ export function MountainFog(props) {
 }
 
 // Preload the mountain model to ensure it's ready before use
-useGLTF.preload('/mountainsComp.glb')
+

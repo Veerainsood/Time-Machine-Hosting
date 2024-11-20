@@ -28,5 +28,3 @@ export function StreetPeople(props) {
     </group>
   )
 }
-
-useGLTF.preload('/peopleComp.glb')

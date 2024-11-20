@@ -46,4 +46,4 @@ export function TimeMachine2(props) {
   )
 }
 
-useGLTF.preload('/compressedMachine.glb')
+

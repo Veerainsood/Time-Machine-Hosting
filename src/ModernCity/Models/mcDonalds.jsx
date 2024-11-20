@@ -22,5 +22,3 @@ export function McDonalds(props) {
     </group>
   )
 }
-
-useGLTF.preload('/mcDonalds.glb')

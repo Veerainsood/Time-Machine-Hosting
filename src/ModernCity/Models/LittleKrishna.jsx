@@ -76,5 +76,3 @@ export function LittleKrishna(props) {
     </group>
   )
 }
-
-useGLTF.preload('./public/LittlekrishnaAnimated.glb')

@@ -284,4 +284,3 @@ export function SpanishHouse(props) {
   )
 }
 
-useGLTF.preload('/spanishHOUSE_.glb')

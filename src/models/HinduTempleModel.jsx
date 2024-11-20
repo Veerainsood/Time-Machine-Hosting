@@ -43,5 +43,3 @@ export function Hindu(props) {
     </group>
   )
 }
-
-useGLTF.preload('/Hindu_templeComp.glb')

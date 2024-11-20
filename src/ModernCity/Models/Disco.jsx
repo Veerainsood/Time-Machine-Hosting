@@ -98,4 +98,4 @@ export function Disco(props) {
   )
 }
 
-useGLTF.preload('/Disco2.glb')
+

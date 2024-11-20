@@ -34,4 +34,3 @@ export function Hut(props) {
   )
 }
 
-useGLTF.preload('/HouseComp.glb')

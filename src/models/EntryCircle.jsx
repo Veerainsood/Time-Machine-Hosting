@@ -36,4 +36,4 @@ export function EntryCircle(props) {
   );
 }
 
-useGLTF.preload('/EntryCircles-transformed.glb');
+

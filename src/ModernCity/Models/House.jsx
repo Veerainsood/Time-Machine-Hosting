@@ -118,4 +118,4 @@ export function House(props) {
   )
 }
 
-useGLTF.preload('/equiped_house1.glb')
+

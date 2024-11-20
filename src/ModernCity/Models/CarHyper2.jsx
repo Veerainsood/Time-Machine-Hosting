@@ -198,4 +198,3 @@ export function HyperCar2(props) {
   )
 }
 
-useGLTF.preload('/CarHyper2_comp.glb')

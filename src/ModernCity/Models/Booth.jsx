@@ -39,4 +39,3 @@ export function Booth (props) {
   )
 }
 
-useGLTF.preload('/Telephone_comp_opt.glb')

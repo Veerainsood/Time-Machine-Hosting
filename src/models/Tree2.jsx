@@ -19,4 +19,4 @@ export function Tree2Model(props) {
   )
 }
 
-useGLTF.preload('/Tree2Opt.glb')
+

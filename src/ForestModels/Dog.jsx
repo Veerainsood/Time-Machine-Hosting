@@ -23,4 +23,4 @@ export function Dog(props) {
   )
 }
 
-useGLTF.preload('/dog_001.glb')
+

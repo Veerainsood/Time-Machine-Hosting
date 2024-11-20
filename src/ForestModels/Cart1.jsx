@@ -19,4 +19,4 @@ export function CarryCart(props) {
   )
 }
 
-useGLTF.preload('/CartComp.glb')
+

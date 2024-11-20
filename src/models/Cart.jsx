@@ -21,4 +21,4 @@ export function Cart(props) {
   )
 }
 
-useGLTF.preload('/HorseCartComp.glb')
+

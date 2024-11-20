@@ -1080,4 +1080,3 @@ function Tag({ position, text, font }) {
   );
 }
 
-useGLTF.preload('/forest.gltf')

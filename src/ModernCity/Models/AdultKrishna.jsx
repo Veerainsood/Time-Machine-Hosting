@@ -352,4 +352,3 @@ export function AdultKrishna(props) {
   )
 }
 
-useGLTF.preload('/AdultKrishnaAnimated.glb')

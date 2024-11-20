@@ -46,4 +46,4 @@ export function Market(props) {
   )
 }
 
-useGLTF.preload('/supermarket_final2.glb')
+

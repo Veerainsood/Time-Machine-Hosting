@@ -286,5 +286,3 @@ export function Gas_Station(props) {
     </group>
   )
 }
-
-useGLTF.preload('/red_gas_comp_opt.glb')

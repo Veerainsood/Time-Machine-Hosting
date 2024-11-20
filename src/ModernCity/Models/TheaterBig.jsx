@@ -275,4 +275,3 @@ export function TheaterBig(props) {
   )
 }
 
-useGLTF.preload('/TheaterBig.glb')

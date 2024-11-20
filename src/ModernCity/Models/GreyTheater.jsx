@@ -329,4 +329,3 @@ export function GreyTheater(props) {
   )
 }
 
-useGLTF.preload('/GreyTheater.glb')

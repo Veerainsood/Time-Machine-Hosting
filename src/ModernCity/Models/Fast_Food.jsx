@@ -15,5 +15,3 @@ export function Fast_Food(props) {
     </group>
   )
 }
-
-useGLTF.preload('/fast_food_restaurant.glb')

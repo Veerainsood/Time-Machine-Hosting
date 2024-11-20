@@ -24,4 +24,3 @@ export function Vending(props) {
   )
 }
 
-useGLTF.preload('/vending_machine_coca_cola.glb')

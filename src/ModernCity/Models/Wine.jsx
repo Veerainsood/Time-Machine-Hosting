@@ -269,4 +269,3 @@ export function Wine (props) {
   )
 }
 
-useGLTF.preload('/wine_bar_comp_opt.glb')

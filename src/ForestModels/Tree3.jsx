@@ -18,4 +18,3 @@ export function Tree3Model(props) {
   )
 }
 
-useGLTF.preload('/Tree3Comp.glb')

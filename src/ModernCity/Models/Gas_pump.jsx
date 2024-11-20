@@ -28,4 +28,3 @@ export function Gas_pump(props) {
   )
 }
 
-useGLTF.preload('/gas_pump.glb')

@@ -32,5 +32,3 @@ export function Building_One(props) {
     </group>
   )
 }
-
-useGLTF.preload('/building_constructor_low_poly.glb')

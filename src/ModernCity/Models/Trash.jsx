@@ -41,4 +41,3 @@ export function Trash(props) {
   )
 }
 
-useGLTF.preload('/trash_can.glb')

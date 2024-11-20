@@ -149,4 +149,3 @@ export function Modern_VILLA(props) {
   )
 }
 
-useGLTF.preload('/modern_luxurious_villa_comp_opt.glb')

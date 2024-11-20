@@ -2804,4 +2804,4 @@ export function CityModel2(props) {
   )
 }
 
-useGLTF.preload('/CleanedCity.glb')
+

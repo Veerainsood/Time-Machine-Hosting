@@ -361,4 +361,3 @@ export function BasketBallStad(props) {
   )
 }
 
-useGLTF.preload('/basketBallModified.glb')

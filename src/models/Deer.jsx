@@ -23,4 +23,4 @@ export function Deer(props) {
   )
 }
 
-useGLTF.preload('/deer_001.glb')
+

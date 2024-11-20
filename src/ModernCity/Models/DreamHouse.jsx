@@ -108,5 +108,3 @@ export function DreamHouse (props) {
     </group>
   )
 }
-
-useGLTF.preload('/white_silver_Comp_opt.glb')

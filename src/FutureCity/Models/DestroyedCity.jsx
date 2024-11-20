@@ -133,4 +133,4 @@ export function DestroyedCity(props) {
   )
 }
 
-useGLTF.preload('/DestroyedCity.glb')
+
