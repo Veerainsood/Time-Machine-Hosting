@@ -11,7 +11,7 @@ const SaveForest = React.lazy(() => import("./SaveForest/SaveForest"));
 const City = React.lazy(() => import("./ModernCity/City"));
 const FutureCity = React.lazy(() => import("./FutureCity/FutureCity"));
 const FutureCity2 = React.lazy(() => import("./FutureCity2/FutureCity2"));
-const DestroyedCity = React.lazy(() => import("./DestroyedCity/DistroyedCity"));
+const DestroyedCity = React.lazy(() =>import('./DestroyedCity/DistroyedCity'));
 const DateTimePicker = React.lazy(() => import("./Components/Timetravel"));
 const FutureChoice = React.lazy(() => import("./Components/SaveFutureOrNot"));
 const TwoBrightFutures = React.lazy(() => import("./Components/TwoPossibleFutures"));

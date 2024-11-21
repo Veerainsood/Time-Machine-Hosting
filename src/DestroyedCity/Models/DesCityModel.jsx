@@ -650,3 +650,4 @@ export function DesCityModel(props) {
   )
 }
 
+useGLTF.preload('/DestroyedCity.glb')

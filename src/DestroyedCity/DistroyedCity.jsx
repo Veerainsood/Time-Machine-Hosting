@@ -1,6 +1,5 @@
 import { Canvas } from '@react-three/fiber';
 import { Physics, RigidBody } from '@react-three/rapier';
-import {Ground} from '../Components/Ground'; // Ensure this is the correct import for your Ground component
 import { Player } from '../Components/Player';
 import { FPV } from '../Components/FPV';
 import { SkyCycle } from '../Components/ChangeDayNight';
@@ -14,7 +13,7 @@ import styles from "../FutureCity/FutureCity.module.css"
 import { DestroyedCityModel } from './Models/DestroyedCityModel';
 import { useNavigate } from 'react-router-dom';
 
-export function DestroyedCity() {  
+export default function DestroyedCity() {  
   const [showReader, setShowReader] = useState(true);
   const navigate = useNavigate();
   return (
