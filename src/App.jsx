@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./HomePage/Home";
 import EduVids from "./HomePage/EduVids";
+import Loading from './Loading'; // Import the Loading component
 
 const Forest = React.lazy(() => import("./3DForest"));
 const LoginMachine = React.lazy(() => import("./login/Login"));
@@ -11,7 +12,7 @@ const SaveForest = React.lazy(() => import("./SaveForest/SaveForest"));
 const City = React.lazy(() => import("./ModernCity/City"));
 const FutureCity = React.lazy(() => import("./FutureCity/FutureCity"));
 const FutureCity2 = React.lazy(() => import("./FutureCity2/FutureCity2"));
-const DestroyedCity = React.lazy(() =>import('./DestroyedCity/DistroyedCity'));
+const DestroyedCity = React.lazy(() => import('./DestroyedCity/DistroyedCity'));
 const DateTimePicker = React.lazy(() => import("./Components/Timetravel"));
 const FutureChoice = React.lazy(() => import("./Components/SaveFutureOrNot"));
 const TwoBrightFutures = React.lazy(() => import("./Components/TwoPossibleFutures"));
@@ -30,103 +31,100 @@ const router = createBrowserRouter(
     {
       path: "/Forest",
       element: (
-        <Suspense fallback={<div>Loading 3D Forest...</div>}>
+        <Suspense fallback={<Loading />}>
           <Forest />
         </Suspense>
       ),
     },
     {
       path: "/",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <HomePage />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <HomePage />
+      </Suspense>
       ),
     },
     {
       path: "/EduVids",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <EduVids />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <EduVids />
+      </Suspense>
       ),
     },
     {
       path: "/compost_food",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Compost_Food_Waste />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <Compost_Food_Waste />
+      </Suspense>
       ),
     },
     {
       path: "/unplug",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Unplug />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <Unplug />
+      </Suspense>
       ),
     },
     {
       path: "/eco_freindly_appliances",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Eco_friendly_appliance />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <Eco_friendly_appliance />
+      </Suspense>
       ),
     },
     {
       path: "/water",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Water />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <Water />
+      </Suspense>
       ),
     },
     {
       path: "/eco_freindly_cleaning",
-      element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Eco_friendly_cleaning />
-        </Suspense>
+      element: (<Suspense fallback={<Loading />}>
+        <Eco_friendly_cleaning />
+      </Suspense>
       ),
     },
     {
       path: "/natural_Light",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <Natural_Light />
         </Suspense>
+
       ),
     },
     {
       path: "/r",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <R />
         </Suspense>
+
       ),
     },
     {
       path: "/small_Garden",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <Small_Garden />
         </Suspense>
+
       ),
     },
     {
       path: "/single_use_plastic",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <Single_use_plastic />
         </Suspense>
+
       ),
     },
     {
       path: "/Destroyed",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <DestroyedCity />
         </Suspense>
       ),
@@ -134,7 +132,7 @@ const router = createBrowserRouter(
     {
       path: "/City",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <City />
         </Suspense>
       ),
@@ -142,73 +140,82 @@ const router = createBrowserRouter(
     {
       path: "/FutureCity",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <FutureCity />
+         <Suspense fallback={<Loading />}>
+        <FutureCity />
         </Suspense>
+
       ),
     },
     {
       path: "/FutureCity2",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <FutureCity2 />
+         <Suspense fallback={<Loading />}>
+        <FutureCity2 />
         </Suspense>
+
       ),
     },
     {
       path: "/Login",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <LoginMachine />
+         <Suspense fallback={<Loading />}>
+        <LoginMachine />
         </Suspense>
+
       ),
     },
     {
       path: "/timeTravel",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <DateTimePicker />
+         <Suspense fallback={<Loading />}>
+        <DateTimePicker />
         </Suspense>
+
       ),
     },
     {
       path: "/FutureChoice",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <FutureChoice />
+         <Suspense fallback={<Loading />}>
+        <FutureChoice />
         </Suspense>
+
       ),
     },
     {
       path: "/TwoBrightFuture",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <TwoBrightFutures />
+         <Suspense fallback={<Loading />}>
+        <TwoBrightFutures />
         </Suspense>
+
       ),
     },
     {
       path: "/Register",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Register />
+         <Suspense fallback={<Loading />}>
+        <Register />
         </Suspense>
+
       ),
     },
     {
       path: "/NavigationPage",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <NavigationPage />
+         <Suspense fallback={<Loading />}>
+        <NavigationPage />
         </Suspense>
+
       ),
     },
     {
       path: "/SaveForest",
       element: (
-        <Suspense fallback={<div>Loading...</div>}>
-          <SaveForest />
+         <Suspense fallback={<Loading />}>
+        <SaveForest />
         </Suspense>
+
       ),
     },
   ]
@@ -216,10 +223,10 @@ const router = createBrowserRouter(
 
 
 // Main App component to set up routing
-function App(){
-    return (
-      <RouterProvider router={router}/> // Providing the router to handle navigation between components
-    )
+function App() {
+  return (
+    <RouterProvider router={router} /> // Providing the router to handle navigation between components
+  )
 }
 
 export default App; // Exporting the App component as default

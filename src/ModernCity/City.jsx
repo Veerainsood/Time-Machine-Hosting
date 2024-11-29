@@ -45,8 +45,8 @@ export default function City() {
   const [showReader,setShowReader] = useState(true);
   const navigate = useNavigate();
   return (
-    <>    
-      <Suspense>
+    <>   
+       
       <div className={styles.map3d}>  
       <img className={styles.map} id="map" src="/CityMap.png" height="150px" style={{ width: "60%" }} /> <br />
         WASD (← → ↑ ↓) for movement + Space to jump
@@ -179,7 +179,6 @@ export default function City() {
       </div>
       </KeyboardControls>
       <Loader />
-      </Suspense>    
      
       <div className='absolute centered cursor'>+</div>  
     </>
