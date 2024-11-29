@@ -13,7 +13,7 @@ import { Axes } from '../Components/AxesHelper';
 import styles from "../FutureCity/FutureCity.module.css"
 import { Cityscape } from './Models/CityScape';
 import { useNavigate } from 'react-router-dom';
-export function FutureCity2() {  
+export default function FutureCity2() {  
   const [showReader,setShowReader] = useState(true);
   const navigate = useNavigate();
   return (
